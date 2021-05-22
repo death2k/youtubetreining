@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Clone</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <header class="header"> <!--Header Youtube-->
+        <a href="#">
+            <img class="youtube-logo" src="assets/img/logo.png" alt="Youtube Logo" srcset="">
+        </a>
+        
+        <form action="" class="search-bar">
+            <input type="search" class="search-input" placeholder="Search..." aria-label="Search">
+            <button type="submit" class="search-btn">
+                <img src="assets/svg/magnify.svg">
+            </button>
+        </form>
+
+        <div class="menu-icons">
+            <a href="#">
+                <img src="assets/svg/video-plus.svg" alt="upload">
+            </a>
+            <a href="#">
+                <img src="assets/svg/apps.svg" alt="Apps">
+            </a>
+            <a href="#">
+                <img src="assets/svg/bell.svg" alt="Notification">
+            </a>
+            <a href="#">
+                <img class="menu-channel-icon" src="data:image/jpeg;base64,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" alt="" srcset="">
+            </a>
+        </div>
+    </header>    
+
+    <div class="categories">
+        <section class="category-section">
+        <button class="category active">Tudo</button>
+        <button class="category">Games</button>
+        <button class="category">Programação</button>
+        <button class="category">Musica</button>
+        <button class="category">Documentarios</button>
+        <button class="category">Filmes</button>
+        <button class="category">LiveStreams</button>
+        <button class="category">Desenhos</button>
+        <button class="category">Vlogs</button>
+        <button class="category">Outros</button>
+        </section>
+    </div>
+
+    
+    <div class="videos">
+        <section class="video-section">
+            <article class="video-container">
+                <a href="#" class="thumbnail" data-duration="12:24" >
+                    <img class="thumbnail-image" src="assets/img/thumbnail2.jpeg" alt="" srcset="">
+                </a>
+                <div class="video-bottom-section">
+                    <a href="#">
+                        <img class="channel-icon" src="/assets/img/thumbnail1.jpeg" alt="">
+                    </a>
+                    <div class="video-details">
+                        <a href="#" class="video-title">Video Title</a>
+                        <a href="#" class="video-channel-name">Flávio Ribeiro</a>
+
+                        <div class="video-metadata">
+                            <span>1.5M views</span>
+                            •
+                            <span>3 weeks ago</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="video-container">
+                <a href="#" class="thumbnail" data-duration="12:24" >
+                    <img class="thumbnail-image" src="assets/img/thumbnail2.jpeg" alt="" srcset="">
+                </a>
+                <div class="video-bottom-section">
+                    <a href="#">
+                        <img class="channel-icon" src="/assets/img/thumbnail1.jpeg" alt="">
+                    </a>
+                    <div class="video-details">
+                        <a href="#" class="video-title">Video Title</a>
+                        <a href="#" class="video-channel-name">Flávio Ribeiro</a>
+
+                        <div class="video-metadata">
+                            <span>1.5M views</span>
+                            •
+                            <span>3 weeks ago</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="video-container">
+                <a href="#" class="thumbnail" data-duration="12:24" >
+                    <img class="thumbnail-image" src="assets/img/thumbnail2.jpeg" alt="" srcset="">
+                </a>
+                <div class="video-bottom-section">
+                    <a href="#">
+                        <img class="channel-icon" src="/assets/img/thumbnail1.jpeg" alt="">
+                    </a>
+                    <div class="video-details">
+                        <a href="#" class="video-title">Video Title</a>
+                        <a href="#" class="video-channel-name">Flávio Ribeiro</a>
+
+                        <div class="video-metadata">
+                            <span>1.5M views</span>
+                            •
+                            <span>3 weeks ago</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="video-container">
+                <a href="#" class="thumbnail" data-duration="12:24" >
+                    <img class="thumbnail-image" src="assets/img/thumbnail2.jpeg" alt="" srcset="">
+                </a>
+                <div class="video-bottom-section">
+                    <a href="#">
+                        <img class="channel-icon" src="/assets/img/thumbnail1.jpeg" alt="">
+                    </a>
+                    <div class="video-details">
+                        <a href="#" class="video-title">Video Title</a>
+                        <a href="#" class="video-channel-name">Flávio Ribeiro</a>
+
+                        <div class="video-metadata">
+                            <span>1.5M views</span>
+                            •
+                            <span>3 weeks ago</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="video-container">
+                <a href="#" class="thumbnail" data-duration="12:24" >
+                    <img class="thumbnail-image" src="assets/img/thumbnail2.jpeg" alt="" srcset="">
+                </a>
+                <div class="video-bottom-section">
+                    <a href="#">
+                        <img class="channel-icon" src="/assets/img/thumbnail1.jpeg" alt="">
+                    </a>
+                    <div class="video-details">
+                        <a href="#" class="video-title">Video Title</a>
+                        <a href="#" class="video-channel-name">Flávio Ribeiro</a>
+
+                        <div class="video-metadata">
+                            <span>1.5M views</span>
+                            •
+                            <span>3 weeks ago</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="video-container">
+                <a href="#" class="thumbnail" data-duration="12:24" >
+                    <img class="thumbnail-image" src="assets/img/thumbnail2.jpeg" alt="" srcset="">
+                </a>
+                <div class="video-bottom-section">
+                    <a href="#">
+                        <img class="channel-icon" src="/assets/img/thumbnail1.jpeg" alt="">
+                    </a>
+                    <div class="video-details">
+                        <a href="#" class="video-title">Video Title</a>
+                        <a href="#" class="video-channel-name">Flávio Ribeiro</a>
+
+                        <div class="video-metadata">
+                            <span>1.5M views</span>
+                            •
+                            <span>3 weeks ago</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="video-container">
+                <a href="#" class="thumbnail" data-duration="12:24" >
+                    <img class="thumbnail-image" src="assets/img/thumbnail2.jpeg" alt="" srcset="">
+                </a>
+                <div class="video-bottom-section">
+                    <a href="#">
+                        <img class="channel-icon" src="/assets/img/thumbnail1.jpeg" alt="">
+                    </a>
+                    <div class="video-details">
+                        <a href="#" class="video-title">Video Title</a>
+                        <a href="#" class="video-channel-name">Flávio Ribeiro</a>
+
+                        <div class="video-metadata">
+                            <span>1.5M views</span>
+                            •
+                            <span>3 weeks ago</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="video-container">
+                <a href="#" class="thumbnail" data-duration="12:24" >
+                    <img class="thumbnail-image" src="assets/img/thumbnail2.jpeg" alt="" srcset="">
+                </a>
+                <div class="video-bottom-section">
+                    <a href="#">
+                        <img class="channel-icon" src="/assets/img/thumbnail1.jpeg" alt="">
+                    </a>
+                    <div class="video-details">
+                        <a href="#" class="video-title">Video Title</a>
+                        <a href="#" class="video-channel-name">Flávio Ribeiro</a>
+
+                        <div class="video-metadata">
+                            <span>1.5M views</span>
+                            •
+                            <span>3 weeks ago</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+           
+
+            
+        </section>
+    </div>
+
+
+
+</body>
+</html>
